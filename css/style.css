@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: aliceblue;
+    font-family: FREERIDE;
+}
+
+
+@font-face {
+	font-family: FREERIDE ; 
+	src: url(../font/FREERIDE.OTF);
+}
+
+
+.body {
+    background-color: blue;
+}
+
+.header {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.header__menu_items {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header__menu_item {
+    margin: 10px;
+    font-style: normal;
+}
+
+.header__menu_item_social{
+    margin: 10px;
+}
+
+.main {
+    max-width: 1150px;
+    margin: 0 auto;
+    position: relative;
+}
+
+body {
+    position: relative;
+    background-color: dimgrey;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100hv;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-inline-flexbox;
+    display: -o-flex;
+    display: flex;
+}
+
+.main__slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 1150px;
+    height: auto;
+}
+
+ .main__slider-items{
+    width: 400%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-inline-flexbox;
+    display: -o-flex;
+    display: flex;
+} 
+
+.main__slider-items .item{
+    width: 25%;
+}
+
+.main__slider-items .item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.main__slider-items input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.main__slider-nav{
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__slider-nav .slider-nav-item {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 7px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease; 
+    transition: all .5s ease;
+    opacity: .3;
+}
+
+.main__slider-nav .slider-nav-item:hover{
+    opacity: 0.7;
+}
+
+#s1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#s2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+
+#s3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#s4:checked ~ .s1{
+    margin-left: -75%;
+}
