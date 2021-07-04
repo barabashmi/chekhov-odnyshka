@@ -3,63 +3,121 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    color: #000;
     font-family: FREERIDE;
 }
 
 
-@font-face {
-	font-family: FREERIDE ; 
-	src: url(../font/FREERIDE.OTF);
-}
-
-/*header*/
-
-.header {
-    width: 100%;
-    height: 80px;
-    
-}
-
-.header__container {
-    max-width: 1150px;
-    height: 80px;
-    margin: 0 auto;
+.header__logo {
     display: flex;
     justify-content: space-between;
-    /* border-top-left-radius: 30px;
-    border-top-right-radius: 30px; */
+    max-width: 1300px;
+    margin: 0 auto;
 }
+
+.header__logo_shopping-bag{
+    margin: 25px;
+}
+
+.header__logo_links {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo_link {
+    height: 30px;
+   
+}
+
+.header__nav-bar {
+    width: 100%;
+    background-color: #d8b67d;
+    height: 80px;
+    display:inline-block;
+}
+
+.header__nav-bar_wrapper{
+    max-width: 1300px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+
+}
+
 
 .header__menu_items {
     display: flex;
-    margin-top: 20px;
-    margin-left: 20px;
+    justify-content: space-between;
+    max-width: 1300px;
+    height: 30px;
+    margin:  0 auto ;
+    white-space: nowrap;
 }
 
 .header__menu_item {
-    margin: 10px;
-    font-style: normal;
+    font-size: 25px;
+}
+.header__menu_item > a {
+    color: #000;
 }
 
-.header__menu_item_social{
-    margin: 10px;
-}
-/*main*/
-.main {
-    max-width: 1150px;
+
+
+
+
+
+
+
+.section {
+    max-width: 1300px;
     margin: 0 auto;
-    position: relative;
 }
-/*body*/
-body {
-    position: relative;
+
+
+.wrapper-slider{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.main__info {
+    width: 500px;
+}
+
+.main__info > h1 {
+    font-size: 60px;
+}
+
+.main__info > h3 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main__info > button {
+    width: 208px;
+    height: 47px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000;
+    border-radius: 8px;
+    background-color:#d8b67d;
+    border: none;
+}
+
+.main__info > p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 /*slider*/
 .wrapper {
     position: relative;
     width: 600px;
-    height: 100hv;
+    height: 400px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-inline-flexbox;
