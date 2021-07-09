@@ -37,19 +37,18 @@
     </header>
 
     <main class="main">
-        <section class="section">
-            <div class="wrapper-slider">
+        <section class="hello section">
+            <div class="hello__wrapper">
                 <div class="main__info">
-                    <h1>Добро пожаловать!</h1>
-                    <h3>Второй заголовок поменьше</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <h1 class="main__info-header">Добро пожаловать!</h1>
+                    <h3 class="main__info-header_2">Второй заголовок поменьше</h3>
+                    .
+                    <p class="main__info-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Minus alias mollitia maxime aut quod itaque aperiam quia 
                         voluptatum earum autem.
                     </p>
-                    <button>Подробнее</button>
+                    <button class="main__info-button">Подробнее</button>
                 </div>
-
                 <div class="wrapper">
                     <div class="main__slider">
                         <div class="main__slider-nav">
@@ -57,8 +56,7 @@
                             <label for="s2" class="slider-nav-item"></label>
                             <label for="s3" class="slider-nav-item"></label>
                             <label for="s4" class="slider-nav-item"></label>
-                        </div>
-                        
+                        </div> 
                         <div class="main__slider-items">
         
                             <input type="radio" name="s" id="s1">
@@ -88,6 +86,277 @@
                 </div>
             </div>
         </section>
+
+
+        <section class="catalog section">
+            <div class="catalog__wrapper">
+                <div class="catalog__items">
+                    <div class="catalog__item">
+                        <div class="catalog__item-link"><a href="#">Серьги</a></div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-link"><a href="#" >Пины</a></div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-link"><a href="#">Браслеты</a></div> 
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-link"><a href="#">Кулоны</a></div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="about__wrapper">
+                <div class="about__img"><img class="about__img-photo"src="../img/photo.png" alt=""></div>
+                <div class="about__info">
+                    <h1 class="about__info-header">Привет! Вы в магазине бла бла бла...</h1>
+                    <div class="about__info-paragraphs">
+                        <p class="about__info-paragraph-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Rem minus deserunt modi quod fugiat consequuntur aliquam esse sequi repudiandae quasi dolorem eveniet, 
+                            rerum libero itaque provident optio perspiciatis, blanditiis culpa.</p>
+                        <p class="about__info-paragraph-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus necessitatibus eaque modi eveniet pariatur, laboriosam maiores officiis eius ratione, 
+                            ipsum veniam adipisci quia debitis rem provident ab cum obcaecati neque quis vero incidunt accusantium autem! Quidem qui voluptatum veniam, dolores dolorem optio, expedita, 
+                            reprehenderit dignissimos minima repellat ipsum hic voluptatem.</p>
+                        <p class="about__info-paragraph-3">Почему у нас тут всё круто очень?</p>
+                        <p class="about__info-paragraph-4">Да потому что бла бла бла Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Ratione iusto architecto autem sed dicta magni, qui explicabo? Temporibus labore 
+                            possimus veritatis! Alias, adipisci. Quasi, ratione illum. Esse rem reprehenderit quae autem, 
+                            eligendi obcaecati corporis possimus dicta accusamus voluptatum illum fugiat.</p>
+                        <p class="about__info-paragraph-5">Создание украшений – дело всей моей жизни, которым я горю каждый день. 
+                            Доверьтесь мне, и я подарю вам вечное лето на ладони!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sales section">
+            <div class="sales__wrapper">
+                <div class="sales__content">
+                    <h3 class="sales__content-name">Скидка 10%</h3>
+                    <p class="sales__content-desc">Ratione iusto architecto autem 
+                        sed dicta magni, qui explicabo? Temporibus labore 
+                        possimus veritatis! 
+                    </p>
+                </div>
+                <div class="sales__content">
+                    <h3 class="sales__content-name">Второе изделие</h3>
+                    <p class="sales__content-desc">Ratione iusto architecto autem 
+                        sed dicta magni, qui explicabo? Temporibus labore 
+                        possimus veritatis! 
+                    </p>
+                </div>
+                <div class="sales__content">
+                    <h3 class="sales__content-name">День рождения</h3>
+                    <p class="sales__content-desc">Ratione iusto architecto autem 
+                        sed dicta magni, qui explicabo? Temporibus labore 
+                        possimus veritatis! 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product section">
+            <div class="product__wrapper">
+                <div class="product__header">
+                    <button class="product__header-button">Все</button>
+                    <button class="product__header-button">Акции</button>
+                    <button class="product__header-button">Новинки</button>
+                </div>
+                <div class="product__content-items">
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product__content-item">
+                        <div class="product__content-wrapper">
+                            <div class="product__content-sticer">Акция</div>
+                            <img src="../img/content-1.png" alt="" class="product__content-img">
+                            <h3 class="product__content-name">Серьги</h3>
+                            <div class="product__content-buy">
+                                <div class="product__content-prise">
+                                    <span class="product__content-prise-new">1500</span>        
+                                    <span class="product__content-prise-old">2000</span>
+                                </div>
+                                <div class="product__content-info-buy-link">
+                                    <img src="../img/shopping_bag.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 </html>

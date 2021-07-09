@@ -3,10 +3,14 @@
     padding: 0;
     text-decoration: none;
     list-style-type: none;
-    font-family: FREERIDE;
+    /* font-family: FREERIDE; */
 }
 
+body {
+    background-color: ghostwhite;
+}
 
+/*header*/
 .header__logo {
     display: flex;
     justify-content: space-between;
@@ -27,12 +31,11 @@
 
 .header__logo_link {
     height: 30px;
-   
 }
 
 .header__nav-bar {
     width: 100%;
-    background-color: #d8b67d;
+    background-color: /*#d8b67d*/antiquewhite;
     height: 80px;
     display:inline-block;
 }
@@ -42,9 +45,7 @@
     height: 80px;
     line-height: 80px;
     margin: 0 auto;
-
 }
-
 
 .header__menu_items {
     display: flex;
@@ -57,45 +58,43 @@
 
 .header__menu_item {
     font-size: 25px;
+    font-family: FREERIDE;
 }
 .header__menu_item > a {
     color: #000;
 }
 
-
-
-
-
-
-
-
-.section {
-    max-width: 1300px;
-    margin: 0 auto;
+/*slider*/
+.hello {
+    margin-top: 50px;
 }
 
 
-.wrapper-slider{
+.hello__wrapper{
     display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
     justify-content: space-between;
-    margin-top: 50px;
+    
 }
 
 .main__info {
     width: 500px;
 }
 
-.main__info > h1 {
+.main__info-header {
     font-size: 60px;
+    font-family: FREERIDE;
 }
 
-.main__info > h3 {
+.main__info-header_2 {
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-family: FREERIDE;
 }
 
-.main__info > button {
+.main__info-button {
     width: 208px;
     height: 47px;
     font-style: normal;
@@ -104,14 +103,21 @@
     line-height: 29px;
     color: #000;
     border-radius: 8px;
-    background-color:#d8b67d;
+    background-color:antiquewhite/*#d8b67d*/;
     border: none;
+    cursor: pointer;
+    font-family: FREERIDE;
 }
 
-.main__info > p {
+.main__info-button:hover {
+    background-color:#a56d0d;
+}
+
+.main__info-paragraph {
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-family: FREERIDE;
 }
 /*slider*/
 .wrapper {
@@ -195,4 +201,236 @@
 
 #s4:checked ~ .s1{
     margin-left: -75%;
+}
+
+
+
+/*catalog*/
+.catalog {
+    margin: 30px 0 30px 0;
+}
+.catalog__wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.catalog__items {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.catalog__item {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-color: peru;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 2px rgb(12, 1, 1);
+    cursor: pointer;
+    box-shadow:
+        -1px -1px rgb(128, 92, 47),
+        -2px -2px rgb(128, 92, 47),
+        -3px -3px rgb(128, 92, 47),
+        -4px -4px rgb(128, 92, 47),
+        -5px -5px rgb(128, 92, 47),
+        -6px -6px rgb(128, 92, 47),
+        /* тень подложки */
+        -7px -7px 4px 2px rgb(138, 138, 138),
+        -8px -8px 6px 3px rgb(138, 138, 138);
+}
+
+.catalog__item:hover {
+    background-color: rgb(228, 150, 72);
+}
+
+.catalog__item-link > a{
+    color: #000;
+    font-size: 30px;
+}
+
+
+/*about*/
+.about__wrapper {
+    max-width: 1300px;
+    margin: 100px auto;
+    display: flex;
+    border-bottom: solid 3px #a56d0d;
+}
+
+.about__img-photo{
+    width: 600px;
+    height: 600px;
+    border: solid 16px rgb(105, 75, 36);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about__info{
+    margin-left: 30px;
+}
+
+.about__info-header {
+    font-family: FREERIDE;
+    font-size: 60px;
+}
+
+.about__info-paragraph-1{
+    font-family: FREERIDE;
+    font-size: 14px;
+    margin: 30px 0 40px 0;
+}
+
+.about__info-paragraph-2{
+    font-family: FREERIDE;
+    font-size: 14px;
+    
+}
+
+.about__info-paragraph-3{
+    font-family: FREERIDE;
+    font-size: 40px;
+    margin: 30px 0 40px 0;
+}
+
+.about__info-paragraph-4{
+    font-family: FREERIDE;
+    font-size: 14px;
+}
+
+.about__info-paragraph-5{
+    font-family: FREERIDE;
+    font-size: 40px;
+    margin: 30px 0 40px 0;
+}
+
+/*sales*/
+.sales{
+    background-image: url(../img/старые-доски_168.jpg);
+}
+
+.sales__wrapper {  
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    padding: 30px 0 30px 0;
+}
+
+.sales__content {
+    width: 400px;
+    height: 280px;
+    text-align: center;
+    border: solid 1px #000;
+    background-image: url(../img/decor-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: antiquewhite;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.sales__content-name{
+    margin: 30px auto 30px auto;
+    font-family: FREERIDE;
+    font-size: 35px;
+}
+
+.sales__content-desc{
+    margin-top: 130px;
+    font-family: FREERIDE;
+}
+
+/*product*/
+
+.product{
+    margin: 50px 0;
+}
+.product__wrapper{
+
+    max-width: 1300px;
+    margin: 0 auto;
+
+    
+}
+
+.product__header {
+    display: flex;
+    justify-content: center;
+}
+
+.product__header-button{
+    width: 208px;
+    height: 47px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000;
+    border-radius: 8px;
+    background-color:antiquewhite/*#d8b67d*/;
+    border: none;
+    cursor: pointer;
+    font-family: FREERIDE;
+    margin:  0 30px 0 30px;
+}
+
+.product__content-img{
+    width: 305px;
+    height: 305px;
+}
+
+.product__content-items{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    justify-content: space-between;
+}
+.product__content-item{
+    width: 25%;
+    margin: 20px 20px 20px 20px;
+    border: solid 1px #a56d0d;
+}
+
+.product__content-wrapper{
+    position: relative;
+    padding: 10px;
+}
+
+.product__content-sticer{
+    background-color: goldenrod;
+    position: absolute;
+    margin: 30px 0;
+    padding: 0 10px 0 40px;
+}
+
+.product__content-items {
+    margin-top: 50px;
+}
+
+.product__content-buy{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__content-prise-new{
+    cursor: pointer;
+    font-family: FREERIDE;
+    font-size: 30px;
+}
+.product__content-prise-old{
+    margin-left: 20px;
+    cursor: pointer;
+    font-family: FREERIDE;
+    font-size: 30px;
+    text-decoration: line-through;
+
+}
+
+.product__content-name{
+    cursor: pointer;
+    font-family: FREERIDE;
+    font-size: 30px;
 }
