@@ -1,0 +1,33 @@
+/* 
+
+.slider {
+    width: 600px;
+    height: 400px;
+    border: 2px solid #000;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.slider-line{
+    height: 400px;
+    width: 2400px;
+    background-color: aqua;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+} */
+
+
+.slider{
+    border: 2px solid #000;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+}
